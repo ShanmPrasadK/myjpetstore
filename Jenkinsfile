@@ -8,10 +8,7 @@ peline{
 	stages{
 		stage("Checkout Code"){
 			steps{
-				script{
-				checkout([$class: 'GitSCM', branches: [[name: GIT_BRANCH]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], 
-						userRemoteConfigs: [[credentialsId:GIT_CREDS_ID , url: GIT_URL]]])
-				}
+				git 'GIT_URL'
 			}
 		}
 }
