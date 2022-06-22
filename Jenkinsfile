@@ -9,7 +9,7 @@ pipeline{
 	stages{
 		stage("Checkout Code"){
 			steps{
-				git 'GIT_URL'
+				git 'git@github.com:ShanmPrasadK/myjpetstore.git'
 			}
 		}
 }
