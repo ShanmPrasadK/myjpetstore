@@ -1,4 +1,4 @@
-peline{
+pipeline{
 	agent any
 	environment{
         GIT_URL = 'git@github.com:ShanmPrasadK/myjpetstore.git' 
